@@ -110,7 +110,7 @@ public class Scrabble {
 			// non-whitespace characters. Whitespace is either space characters, or  
 			// end-of-line characters.
 			String input = in.readString();
-			if (input==".") {
+			if (input.equals(".")) {
 				break;
 			}
 			if (!MyString.subsetOf(input, hand)) {
@@ -149,10 +149,10 @@ public class Scrabble {
 			String input = in.readString();
 			//// Replace the following break statement with code
 			//// that completes the game playing loop
-			if (input == "e") {
+			if (input.equals("e")) {
 				break;
 			}
-			if (input == "n") {
+			if (input .equals("n")) {
 				String s = createHand();
 				playHand(s);
 			}
